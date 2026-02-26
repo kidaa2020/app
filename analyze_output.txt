@@ -1,0 +1,137 @@
+﻿Analyzing healthbuddy...                                        
+
+  error - Target of URI doesn't exist: '../../data/models/user.dart' - lib\data\datasources\local\hive_database.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/food_entry.dart' - lib\data\datasources\local\hive_database.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/pet.dart' - lib\data\datasources\local\hive_database.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/routine.dart' - lib\data\datasources\local\hive_database.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/exercise.dart' - lib\data\datasources\local\hive_database.dart:6:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/exercise_set.dart' - lib\data\datasources\local\hive_database.dart:7:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/workout_session.dart' - lib\data\datasources\local\hive_database.dart:8:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/meal_type.dart' - lib\data\datasources\local\hive_database.dart:9:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/pet_type.dart' - lib\data\datasources\local\hive_database.dart:10:8 - uri_does_not_exist
+  error - The method 'UserAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:23:26 - undefined_method
+  error - The method 'FoodEntryAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:24:26 - undefined_method
+  error - The method 'PetAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:25:26 - undefined_method
+  error - The method 'RoutineAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:26:26 - undefined_method
+  error - The method 'ExerciseAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:27:26 - undefined_method
+  error - The method 'ExerciseSetAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:28:26 - undefined_method
+  error - The method 'WorkoutSessionAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:29:26 - undefined_method
+  error - The method 'MealTypeAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:30:26 - undefined_method
+  error - The method 'PetTypeAdapter' isn't defined for the type 'HiveDatabase' - lib\data\datasources\local\hive_database.dart:31:26 - undefined_method
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\data\datasources\local\hive_database.dart:34:24 - non_type_as_type_argument
+  error - The name 'FoodEntry' isn't a type, so it can't be used as a type argument - lib\data\datasources\local\hive_database.dart:35:24 - non_type_as_type_argument
+  error - The name 'Pet' isn't a type, so it can't be used as a type argument - lib\data\datasources\local\hive_database.dart:36:24 - non_type_as_type_argument
+  error - The name 'Routine' isn't a type, so it can't be used as a type argument - lib\data\datasources\local\hive_database.dart:37:24 - non_type_as_type_argument
+  error - The name 'WorkoutSession' isn't a type, so it can't be used as a type argument - lib\data\datasources\local\hive_database.dart:38:24 - non_type_as_type_argument
+  error - Target of URI doesn't exist: '../../core/constants/app_constants.dart' - lib\data\datasources\remote\open_food_facts_api.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../models/product.dart' - lib\data\datasources\remote\open_food_facts_api.dart:3:8 - uri_does_not_exist
+  error - Undefined name 'AppConstants' - lib\data\datasources\remote\open_food_facts_api.dart:11:24 - undefined_identifier
+  error - The name 'Product' isn't a type, so it can't be used as a type argument - lib\data\datasources\remote\open_food_facts_api.dart:20:10 - non_type_as_type_argument
+  error - Undefined name 'Product' - lib\data\datasources\remote\open_food_facts_api.dart:29:18 - undefined_identifier
+  error - Target of URI doesn't exist: '../../data/repositories/pet_repository.dart' - lib\features\pet\providers\pet_provider.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/repositories/user_repository.dart' - lib\features\pet\providers\pet_provider.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/pet.dart' - lib\features\pet\providers\pet_provider.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../core/constants/app_constants.dart' - lib\features\pet\providers\pet_provider.dart:6:8 - uri_does_not_exist
+  error - The name 'PetRepository' isn't a type, so it can't be used as a type argument - lib\features\pet\providers\pet_provider.dart:8:40 - non_type_as_type_argument
+  error - The function 'PetRepository' isn't defined - lib\features\pet\providers\pet_provider.dart:9:10 - undefined_function
+  error - The name 'Pet' isn't a type, so it can't be used as a type argument - lib\features\pet\providers\pet_provider.dart:12:56 - non_type_as_type_argument
+  error - The function 'UserRepository' isn't defined - lib\features\pet\providers\pet_provider.dart:13:55 - undefined_function
+  error - Undefined name 'AppConstants' - lib\features\pet\providers\pet_provider.dart:18:10 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\features\pet\providers\pet_provider.dart:19:45 - undefined_identifier
+  error - The name 'Pet' isn't a type, so it can't be used as a type argument - lib\features\pet\providers\pet_provider.dart:22:41 - non_type_as_type_argument
+  error - Undefined class 'PetRepository' - lib\features\pet\providers\pet_provider.dart:23:9 - undefined_class
+  error - Undefined class 'UserRepository' - lib\features\pet\providers\pet_provider.dart:24:9 - undefined_class
+  error - Undefined class 'Pet' - lib\features\pet\providers\pet_provider.dart:38:26 - undefined_class
+  error - Undefined name 'AppConstants' - lib\features\pet\providers\pet_provider.dart:49:50 - undefined_identifier
+  error - Target of URI doesn't exist: '../../data/repositories/user_repository.dart' - lib\features\profile\providers\profile_provider.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/repositories/workout_repository.dart' - lib\features\profile\providers\profile_provider.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/user.dart' - lib\features\profile\providers\profile_provider.dart:4:8 - uri_does_not_exist
+  error - The name 'UserRepository' isn't a type, so it can't be used as a type argument - lib\features\profile\providers\profile_provider.dart:6:41 - non_type_as_type_argument
+  error - The function 'UserRepository' isn't defined - lib\features\profile\providers\profile_provider.dart:7:10 - undefined_function
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\profile\providers\profile_provider.dart:10:58 - non_type_as_type_argument
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\profile\providers\profile_provider.dart:14:42 - non_type_as_type_argument
+  error - Undefined class 'UserRepository' - lib\features\profile\providers\profile_provider.dart:15:9 - undefined_class
+  error - The property 'completed' can't be unconditionally accessed because the receiver can be 'null' - lib\features\profile\screens\profile_screen.dart:69:50 - unchecked_use_of_nullable_value
+  error - The property 'routineName' can't be unconditionally accessed because the receiver can be 'null' - lib\features\profile\screens\profile_screen.dart:151:46 - unchecked_use_of_nullable_value
+  error - The property 'date' can't be unconditionally accessed because the receiver can be 'null' - lib\features\profile\screens\profile_screen.dart:154:55 - unchecked_use_of_nullable_value
+  error - The property 'exercises' can't be unconditionally accessed because the receiver can be 'null' - lib\features\profile\screens\profile_screen.dart:161:40 - unchecked_use_of_nullable_value
+  error - Target of URI doesn't exist: '../../data/repositories/food_repository.dart' - lib\features\today\providers\today_provider.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/food_entry.dart' - lib\features\today\providers\today_provider.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/meal_type.dart' - lib\features\today\providers\today_provider.dart:4:8 - uri_does_not_exist
+  error - The name 'FoodRepository' isn't a type, so it can't be used as a type argument - lib\features\today\providers\today_provider.dart:6:41 - non_type_as_type_argument
+  error - The function 'FoodRepository' isn't defined - lib\features\today\providers\today_provider.dart:7:10 - undefined_function
+  error - The name 'FoodEntry' isn't a type, so it can't be used as a type argument - lib\features\today\providers\today_provider.dart:10:79 - non_type_as_type_argument
+  error - The name 'FoodEntry' isn't a type, so it can't be used as a type argument - lib\features\today\providers\today_provider.dart:20:55 - non_type_as_type_argument
+  error - Undefined class 'FoodRepository' - lib\features\today\providers\today_provider.dart:21:9 - undefined_class
+  error - Undefined class 'FoodEntry' - lib\features\today\providers\today_provider.dart:30:25 - undefined_class
+  error - The name 'FoodEntry' isn't a type, so it can't be used as a type argument - lib\features\today\providers\today_provider.dart:40:8 - non_type_as_type_argument
+  error - Undefined class 'MealType' - lib\features\today\providers\today_provider.dart:40:33 - undefined_class
+  error - The property 'mealType' can't be unconditionally accessed because the receiver can be 'null' - lib\features\today\providers\today_provider.dart:41:33 - unchecked_use_of_nullable_value
+   info - Unnecessary use of string interpolation - lib\features\today\screens\barcode_scanner_screen.dart:163:38 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\features\today\screens\barcode_scanner_screen.dart:164:38 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\features\today\screens\barcode_scanner_screen.dart:165:38 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\features\today\screens\barcode_scanner_screen.dart:166:38 - unnecessary_string_interpolations
+warning - Unused import: 'package:fl_chart/fl_chart.dart' - lib\features\today\screens\today_screen.dart:2:8 - unused_import
+  error - The property 'mealType' can't be unconditionally accessed because the receiver can be 'null' - lib\features\today\screens\today_screen.dart:50:40 - unchecked_use_of_nullable_value
+  error - Target of URI doesn't exist: '../../data/repositories/workout_repository.dart' - lib\features\workout\providers\workout_provider.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/repositories/user_repository.dart' - lib\features\workout\providers\workout_provider.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/repositories/pet_repository.dart' - lib\features\workout\providers\workout_provider.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/routine.dart' - lib\features\workout\providers\workout_provider.dart:6:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/workout_session.dart' - lib\features\workout\providers\workout_provider.dart:7:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/models/exercise.dart' - lib\features\workout\providers\workout_provider.dart:8:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../core/constants/app_constants.dart' - lib\features\workout\providers\workout_provider.dart:9:8 - uri_does_not_exist
+  error - The name 'WorkoutRepository' isn't a type, so it can't be used as a type argument - lib\features\workout\providers\workout_provider.dart:11:44 - non_type_as_type_argument
+  error - The function 'WorkoutRepository' isn't defined - lib\features\workout\providers\workout_provider.dart:12:10 - undefined_function
+  error - The name 'Routine' isn't a type, so it can't be used as a type argument - lib\features\workout\providers\workout_provider.dart:16:50 - non_type_as_type_argument
+  error - The name 'WorkoutSession' isn't a type, so it can't be used as a type argument - lib\features\workout\providers\workout_provider.dart:21:57 - non_type_as_type_argument
+  error - The function 'UserRepository' isn't defined - lib\features\workout\providers\workout_provider.dart:24:5 - undefined_function
+  error - The function 'PetRepository' isn't defined - lib\features\workout\providers\workout_provider.dart:25:5 - undefined_function
+  error - The name 'Routine' isn't a type, so it can't be used as a type argument - lib\features\workout\providers\workout_provider.dart:34:51 - non_type_as_type_argument
+  error - Undefined class 'WorkoutRepository' - lib\features\workout\providers\workout_provider.dart:35:9 - undefined_class
+  error - Undefined class 'Routine' - lib\features\workout\providers\workout_provider.dart:43:27 - undefined_class
+  error - Undefined class 'Routine' - lib\features\workout\providers\workout_provider.dart:48:30 - undefined_class
+  error - The name 'WorkoutSession' isn't a type, so it can't be used as a type argument - lib\features\workout\providers\workout_provider.dart:59:58 - non_type_as_type_argument
+  error - Undefined class 'WorkoutRepository' - lib\features\workout\providers\workout_provider.dart:60:9 - undefined_class
+  error - Undefined class 'UserRepository' - lib\features\workout\providers\workout_provider.dart:61:9 - undefined_class
+  error - Undefined class 'PetRepository' - lib\features\workout\providers\workout_provider.dart:62:9 - undefined_class
+  error - The name 'Exercise' isn't a type, so it can't be used as a type argument - lib\features\workout\providers\workout_provider.dart:72:50 - non_type_as_type_argument
+  error - The method 'WorkoutSession' isn't defined for the type 'WorkoutSessionsNotifier' - lib\features\workout\providers\workout_provider.dart:73:21 - undefined_method
+  error - Undefined name 'AppConstants' - lib\features\workout\providers\workout_provider.dart:83:26 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\features\workout\providers\workout_provider.dart:84:30 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\features\workout\providers\workout_provider.dart:90:32 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\features\workout\providers\workout_provider.dart:91:28 - undefined_identifier
+  error - Undefined class 'WorkoutSession' - lib\features\workout\providers\workout_provider.dart:97:3 - undefined_class
+warning - Unused import: 'package:uuid/uuid.dart' - lib\features\workout\screens\workout_list_screen.dart:3:8 - unused_import
+warning - Unused import: '../../../data/models/exercise.dart' - lib\features\workout\screens\workout_list_screen.dart:8:8 - unused_import
+warning - Unused import: '../../../data/models/exercise_set.dart' - lib\features\workout\screens\workout_list_screen.dart:9:8 - unused_import
+warning - Unused import: '../../../core/theme/app_colors.dart' - lib\navigation\bottom_nav_shell.dart:2:8 - unused_import
+warning - Unused import: '../../../core/theme/app_text_styles.dart' - lib\navigation\bottom_nav_shell.dart:3:8 - unused_import
+  error - Target of URI doesn't exist: '../../today/screens/today_screen.dart' - lib\navigation\bottom_nav_shell.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../pet/screens/pet_screen.dart' - lib\navigation\bottom_nav_shell.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../workout/screens/workout_list_screen.dart' - lib\navigation\bottom_nav_shell.dart:6:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../profile/screens/profile_screen.dart' - lib\navigation\bottom_nav_shell.dart:7:8 - uri_does_not_exist
+  error - The method 'TodayScreen' isn't defined for the type '_BottomNavShellState' - lib\navigation\bottom_nav_shell.dart:20:5 - undefined_method
+  error - The values in a const list literal must be constants - lib\navigation\bottom_nav_shell.dart:20:5 - non_constant_list_element
+  error - The method 'PetScreen' isn't defined for the type '_BottomNavShellState' - lib\navigation\bottom_nav_shell.dart:21:5 - undefined_method
+  error - The values in a const list literal must be constants - lib\navigation\bottom_nav_shell.dart:21:5 - non_constant_list_element
+  error - The method 'WorkoutListScreen' isn't defined for the type '_BottomNavShellState' - lib\navigation\bottom_nav_shell.dart:22:5 - undefined_method
+  error - The values in a const list literal must be constants - lib\navigation\bottom_nav_shell.dart:22:5 - non_constant_list_element
+  error - The method 'ProfileScreen' isn't defined for the type '_BottomNavShellState' - lib\navigation\bottom_nav_shell.dart:23:5 - undefined_method
+  error - The values in a const list literal must be constants - lib\navigation\bottom_nav_shell.dart:23:5 - non_constant_list_element
+  error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
+
+flutter : 119 issues 
+found. (ran in 2.0s)
+En línea: 1 Carácter: 1
++ flutter analyze 2>&1 | 
+Out-File -FilePath C:\Users
+\kyday\.gemini\anti ...
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (119  
+   issues found. (ran in   
+  2.0s):String) [], Rem    
+oteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
