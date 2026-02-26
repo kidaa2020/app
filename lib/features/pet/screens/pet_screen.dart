@@ -163,11 +163,24 @@ class _PetScreenState extends ConsumerState<PetScreen>
     final colors = _getPetColors(pet.type);
     final hasAura = pet.level >= 4;
 
+    // Use image for Fennec levels 1-4 if available
+    final String assetPath =
+        'assets/images/${pet.type.name.toLowerCase()}_level${pet.level}.png';
+
     return Container(
       width: size + 40,
       height: size + 40,
       decoration: hasAura
-          ? BoxDecoration(shape: BoxShape.circle, boxShadow: [BoxShadow(color: colors[0].withValues(alpha: 0.4), blurRadius: 30, spreadRadius: 5)])
+          ? BoxDecoration(
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: colors[0].withValues(alpha: 0.4),
+                  blurRadius: 30,
+                  spreadRadius: 5,
+                )
+              ],
+            )
           : null,
       child: Center(
         child: Container(
@@ -175,10 +188,30 @@ class _PetScreenState extends ConsumerState<PetScreen>
           height: size,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: LinearGradient(colors: colors, begin: Alignment.topLeft, end: Alignment.bottomRight),
-            boxShadow: [BoxShadow(color: colors[0].withValues(alpha: 0.3), blurRadius: 16, offset: const Offset(0, 8))],
+            gradient: LinearGradient(
+              colors: colors,
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: colors[0].withValues(alpha: 0.3),
+                blurRadius: 16,
+                offset: const Offset(0, 8),
+              )
+            ],
           ),
-          child: Center(child: Text(pet.type.emoji, style: TextStyle(fontSize: 40 + (pet.level * 8.0)))),
+          child: Center(
+            child: Image.asset(
+              assetPath,
+              width: size * 0.8,
+              height: size * 0.8,
+              errorBuilder: (context, error, stackTrace) => Text(
+                pet.type.emoji,
+                style: TextStyle(fontSize: 40 + (pet.level * 8.0)),
+              ),
+            ),
+          ),
         ),
       ),
     );
