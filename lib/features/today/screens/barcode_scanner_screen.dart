@@ -137,7 +137,7 @@ class _BarcodeScannerScreenState extends ConsumerState<BarcodeScannerScreen> {
                 child: Container(
                   width: 40, height: 4,
                   decoration: BoxDecoration(
-                    color: AppColors.black.withOpacity(0.5),
+                    color: Colors.black.withOpacity(0.5),
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
