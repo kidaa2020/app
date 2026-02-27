@@ -7,26 +7,40 @@ import 'package:healthbuddy/core/services/notification_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await HiveDatabase.init();
-  await NotificationService.init();
-  await NotificationService.requestPermissions();
+  
+  try {
+    debugPrint('Starting HealthBuddy services...');
+    
+    await HiveDatabase.init();
+    debugPrint('Hive initialized');
+    
+    await NotificationService.init();
+    debugPrint('Notifications initialized');
+    
+    await NotificationService.requestPermissions();
+    
+    // Schedule default reminders
+    await NotificationService.scheduleDailyReminder(
+      id: 1,
+      title: '¡Hora de desayunar!',
+      body: 'Registra tu primera comida del día con HealthBuddy 🍏',
+      hour: 9,
+      minute: 0,
+    );
 
-  // Schedule default reminders
-  await NotificationService.scheduleDailyReminder(
-    id: 1,
-    title: '¡Hora de desayunar!',
-    body: 'Registra tu primera comida del día con HealthBuddy 🍏',
-    hour: 9,
-    minute: 0,
-  );
-
-  await NotificationService.scheduleDailyReminder(
-    id: 2,
-    title: '¿Listo para entrenar?',
-    body: 'Mantén tu racha activa y gana monedas para tu mascota 🪙',
-    hour: 18,
-    minute: 30,
-  );
+    await NotificationService.scheduleDailyReminder(
+      id: 2,
+      title: '¿Listo para entrenar?',
+      body: 'Mantén tu racha activa y gana monedas para tu mascota 🪙',
+      hour: 18,
+      minute: 30,
+    );
+    
+    debugPrint('Services started successfully');
+  } catch (e) {
+    debugPrint('Error during initialization: $e');
+    // We continue to runApp so the user isn't stuck on a white/splash screen
+  }
 
   runApp(
     const ProviderScope(
