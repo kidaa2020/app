@@ -11,6 +11,7 @@ class AppConstants {
 
   // Coins
   static const int coinsPerWorkout = 5;
+  static const int minWorkoutMinutesForRewards = 10;
   static const int feedPetCost = 3;
 
   // Pet Levels

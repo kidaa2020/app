@@ -54,6 +54,38 @@ class NotificationService {
     await _notificationsPlugin.show(0, title, body, details);
   }
 
+  static Future<void> showWorkoutNotification({
+    required String title,
+    required String body,
+  }) async {
+    const AndroidNotificationDetails androidDetails = AndroidNotificationDetails(
+      'healthbuddy_workout',
+      'Entrenamiento Activo',
+      channelDescription: 'Muestra el progreso del entrenamiento actual',
+      importance: Importance.low, // Cambiado a low para evitar sonidos constantes
+      priority: Priority.low,
+      ongoing: true, // No se puede quitar la notificación
+      showWhen: true,
+      usesChronometer: true, // Muestra el contador
+      onlyAlertOnce: true,
+    );
+
+    const NotificationDetails details = NotificationDetails(
+      android: androidDetails,
+      iOS: DarwinNotificationDetails(
+        presentAlert: false,
+        presentBadge: false,
+        presentSound: false,
+      ),
+    );
+
+    await _notificationsPlugin.show(10, title, body, details);
+  }
+
+  static Future<void> cancelWorkoutNotification() async {
+    await _notificationsPlugin.cancel(10);
+  }
+
   static Future<void> scheduleDailyReminder({
     required int id,
     required String title,

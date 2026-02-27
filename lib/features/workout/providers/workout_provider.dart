@@ -69,26 +69,30 @@ class WorkoutSessionsNotifier extends StateNotifier<List<WorkoutSession>> {
   }
 
   Future<void> completeWorkout(
-      String routineId, String routineName, List<Exercise> exercises) async {
+      String routineId, String routineName, List<Exercise> exercises, Duration duration) async {
+    final isEligible = duration.inMinutes >= AppConstants.minWorkoutMinutesForRewards;
     final session = WorkoutSession(
       id: const Uuid().v4(),
       routineId: routineId,
       routineName: routineName,
       exercises: exercises,
       completed: true,
+      duration: duration,
     );
     await _repository.saveSession(session);
-
-    // Award XP and coins
-    await _petRepo.addXp(AppConstants.xpPerWorkoutCompleted);
-    await _userRepo.addCoins(AppConstants.coinsPerWorkout);
     await _userRepo.recordWorkout();
 
-    // Check streak bonus
-    final streak = _repository.calculateStreak();
-    await _userRepo.updateStreak(streak);
-    if (streak > 0 && streak % AppConstants.streakBonusDays == 0) {
-      await _petRepo.addXp(AppConstants.xpStreakBonus);
+    // Award XP and coins only if eligible
+    if (isEligible) {
+      await _petRepo.addXp(AppConstants.xpPerWorkoutCompleted);
+      await _userRepo.addCoins(AppConstants.coinsPerWorkout);
+      
+      // Check streak bonus
+      final streak = _repository.calculateStreak();
+      await _userRepo.updateStreak(streak);
+      if (streak > 0 && streak % AppConstants.streakBonusDays == 0) {
+        await _petRepo.addXp(AppConstants.xpStreakBonus);
+      }
     }
 
     refresh();

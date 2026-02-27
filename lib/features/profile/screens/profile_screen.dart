@@ -90,7 +90,17 @@ class ProfileScreen extends ConsumerWidget {
                               ],
                             ),
                           ),
-                          Text('${session.exercises.length} ejercicios', style: AppTextStyles.caption),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text('${session.exercises.length} ejercicios', style: AppTextStyles.caption),
+                              if (session.duration != Duration.zero)
+                                Text(
+                                  _formatDuration(session.duration),
+                                  style: AppTextStyles.caption.copyWith(color: AppColors.mintGreenDark, fontWeight: FontWeight.bold),
+                                ),
+                            ],
+                          ),
                         ],
                       ),
                     )),
@@ -99,6 +109,13 @@ class ProfileScreen extends ConsumerWidget {
         ),
       ),
     );
+  }
+
+  String _formatDuration(Duration d) {
+    if (d == Duration.zero) return "";
+    final m = d.inMinutes;
+    if (m == 0) return "${d.inSeconds}s";
+    return "${m}m";
   }
 
   Widget _buildStatCard(String emoji, String value, String label, Color color) {

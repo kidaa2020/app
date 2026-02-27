@@ -23,6 +23,9 @@ class WorkoutSession extends HiveObject {
   @HiveField(5)
   bool completed;
 
+  @HiveField(6)
+  Duration duration;
+
   WorkoutSession({
     required this.id,
     required this.routineId,
@@ -30,6 +33,7 @@ class WorkoutSession extends HiveObject {
     List<Exercise>? exercises,
     DateTime? date,
     this.completed = false,
+    this.duration = Duration.zero,
   })  : exercises = exercises ?? [],
         date = date ?? DateTime.now();
 }
