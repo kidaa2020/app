@@ -77,7 +77,7 @@ class ProfileScreen extends ConsumerWidget {
                         children: [
                           Container(
                             padding: const EdgeInsets.all(8),
-                            decoration: BoxDecoration(color: AppColors.mintGreen.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(8)),
+                            decoration: BoxDecoration(color: AppColors.mintGreen.withOpacity(0.2), borderRadius: BorderRadius.circular(8)),
                             child: const Icon(Icons.check_circle, color: AppColors.mintGreenDark, size: 20),
                           ),
                           const SizedBox(width: 12),
@@ -107,7 +107,7 @@ class ProfileScreen extends ConsumerWidget {
       decoration: BoxDecoration(
         color: AppColors.white,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [BoxShadow(color: color.withValues(alpha: 0.1), blurRadius: 8, offset: const Offset(0, 2))],
+        boxShadow: [BoxShadow(color: color.withOpacity(0.1), blurRadius: 8, offset: const Offset(0, 2))],
       ),
       child: Column(
         children: [

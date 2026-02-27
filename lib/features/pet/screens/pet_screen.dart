@@ -91,7 +91,7 @@ class _PetScreenState extends ConsumerState<PetScreen>
                     decoration: BoxDecoration(
                       color: AppColors.white,
                       borderRadius: BorderRadius.circular(20),
-                      boxShadow: [BoxShadow(color: AppColors.mintGreen.withValues(alpha: 0.2), blurRadius: 8)],
+                      boxShadow: [BoxShadow(color: AppColors.mintGreen.withOpacity(0.2), blurRadius: 8)],
                     ),
                     child: Text(_encouragement!, style: AppTextStyles.body),
                   ),
@@ -102,7 +102,7 @@ class _PetScreenState extends ConsumerState<PetScreen>
                 decoration: BoxDecoration(
                   color: AppColors.white,
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 12)],
+                  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 12)],
                 ),
                 child: Column(
                   children: [
@@ -119,7 +119,7 @@ class _PetScreenState extends ConsumerState<PetScreen>
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                           decoration: BoxDecoration(
-                            color: AppColors.mintGreen.withValues(alpha: 0.2),
+                            color: AppColors.mintGreen.withOpacity(0.2),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Text('${pet.xp} XP', style: AppTextStyles.bodyBold.copyWith(color: AppColors.mintGreenDark)),
@@ -175,7 +175,7 @@ class _PetScreenState extends ConsumerState<PetScreen>
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                  color: colors[0].withValues(alpha: 0.4),
+                  color: colors[0].withOpacity(0.4),
                   blurRadius: 30,
                   spreadRadius: 5,
                 )
@@ -195,7 +195,7 @@ class _PetScreenState extends ConsumerState<PetScreen>
             ),
             boxShadow: [
               BoxShadow(
-                color: colors[0].withValues(alpha: 0.3),
+                color: colors[0].withOpacity(0.3),
                 blurRadius: 16,
                 offset: const Offset(0, 8),
               )
@@ -286,7 +286,7 @@ class _PetScreenState extends ConsumerState<PetScreen>
         decoration: BoxDecoration(
           color: AppColors.white,
           borderRadius: BorderRadius.circular(20),
-          boxShadow: [BoxShadow(color: colors[0].withValues(alpha: 0.2), blurRadius: 12, offset: const Offset(0, 4))],
+          boxShadow: [BoxShadow(color: colors[0].withOpacity(0.2), blurRadius: 12, offset: const Offset(0, 4))],
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

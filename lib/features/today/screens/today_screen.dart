@@ -98,7 +98,7 @@ class TodayScreen extends ConsumerWidget {
               width: 40,
               height: 4,
               decoration: BoxDecoration(
-                color: AppColors.subtleText.withValues(alpha: 0.3),
+                color: AppColors.subtleText.withOpacity(0.3),
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -160,7 +160,7 @@ class TodayScreen extends ConsumerWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: AppColors.mintGreen.withValues(alpha: 0.2),
+                color: AppColors.mintGreen.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Icon(icon, color: AppColors.mintGreenDark, size: 24),

@@ -22,7 +22,7 @@ class XpProgressBar extends StatelessWidget {
                 decoration: BoxDecoration(
                   gradient: AppColors.primaryGradient,
                   borderRadius: BorderRadius.circular(6),
-                  boxShadow: [BoxShadow(color: AppColors.mintGreen.withValues(alpha: 0.4), blurRadius: 6)],
+                  boxShadow: [BoxShadow(color: AppColors.mintGreen.withOpacity(0.2), blurRadius: 6)],
                 ),
               ),
             ],

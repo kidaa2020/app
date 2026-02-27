@@ -50,7 +50,7 @@ class AppTheme {
       cardTheme: CardThemeData(
         color: AppColors.white,
         elevation: 2,
-        shadowColor: AppColors.mintGreen.withValues(alpha: 0.15),
+        shadowColor: AppColors.mintGreen.withOpacity(0.15),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),

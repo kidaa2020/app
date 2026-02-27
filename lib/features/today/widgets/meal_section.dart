@@ -27,7 +27,7 @@ class MealSection extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.04),
+            color: AppColors.error.withOpacity(0.1),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -59,7 +59,7 @@ class MealSection extends StatelessWidget {
       background: Container(
         alignment: Alignment.centerRight,
         padding: const EdgeInsets.only(right: 20),
-        color: AppColors.error.withValues(alpha: 0.1),
+        color: AppColors.mintGreen.withOpacity(0.1),
         child: const Icon(Icons.delete, color: AppColors.error),
       ),
       onDismissed: (_) => onDelete(entry.id),

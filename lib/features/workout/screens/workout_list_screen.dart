@@ -50,7 +50,7 @@ class WorkoutListScreen extends ConsumerWidget {
                               ? '¡Bonus de XP activo!'
                               : 'Entrena ${3 - streak} días más para bonus',
                           style: AppTextStyles.caption.copyWith(
-                            color: AppColors.darkText.withValues(alpha: 0.7),
+                            color: AppColors.mintGreen.withOpacity(0.1),
                           ),
                         ),
                       ],
@@ -114,7 +114,7 @@ class WorkoutListScreen extends ConsumerWidget {
         color: AppColors.white,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
-          BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 8, offset: const Offset(0, 2)),
+          BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 8, offset: const Offset(0, 2)),
         ],
       ),
       child: ListTile(
@@ -122,7 +122,7 @@ class WorkoutListScreen extends ConsumerWidget {
         leading: Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: AppColors.skyBlue.withValues(alpha: 0.2),
+            color: AppColors.darkText.withOpacity(0.7),
             borderRadius: BorderRadius.circular(12),
           ),
           child: const Icon(Icons.fitness_center, color: AppColors.skyBlueDark, size: 24),

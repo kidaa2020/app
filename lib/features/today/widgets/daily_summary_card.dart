@@ -26,7 +26,7 @@ class DailySummaryCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: AppColors.mintGreen.withValues(alpha: 0.2),
+            color: AppColors.mintGreen.withOpacity(0.1),
             blurRadius: 16,
             offset: const Offset(0, 4),
           ),
